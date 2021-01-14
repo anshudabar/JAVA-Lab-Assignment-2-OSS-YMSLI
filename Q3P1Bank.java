@@ -88,7 +88,7 @@ public class Q3P1Bank {
 					double status = savingsAccount.withdraw(amount);
 					while(status == -1) {
 						double nAmount = Double.parseDouble(obj.readLine());
-						status = savingsAccount.withdraw(amount);
+						status = savingsAccount.withdraw(nAmount);
 					}
 					upBalance=savingsAccount.getBalance();
 				}
